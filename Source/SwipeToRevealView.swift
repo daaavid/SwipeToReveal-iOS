@@ -124,12 +124,12 @@ public class SwipeToRevealView: UIView {
     // MARK: Gesture recognizing
 
     private func setupGestureRecognizing() {
-        panGeastureRecognizer.delegate = self
-        panGeastureRecognizer.addTarget(self, action: #selector(self.panGestureRecognizerUpdate(_:)))
-        addGestureRecognizer(panGeastureRecognizer)
+        panGestureRecognizer.delegate = self
+        panGestureRecognizer.addTarget(self, action: #selector(self.panGestureRecognizerUpdate(_:)))
+        addGestureRecognizer(panGestureRecognizer)
     }
 
-    private let panGeastureRecognizer = UIPanGestureRecognizer()
+    private let panGestureRecognizer = UIPanGestureRecognizer()
 
     private struct Pan {
         let startPoint: CGFloat
@@ -159,7 +159,7 @@ public class SwipeToRevealView: UIView {
 
     private var pan: Pan?
 
-    func panGestureRecognizerUpdate(_ pgr: UIPanGestureRecognizer) {
+    @objc func panGestureRecognizerUpdate(_ pgr: UIPanGestureRecognizer) {
         switch pgr.state {
         case .possible: break
         case .began:

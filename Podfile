@@ -6,7 +6,7 @@ inhibit_all_warnings!
 target 'SwipeToRevealExample' do
   pod 'SwipeToReveal', :path => '.'
   pod 'Reveal-SDK', :configurations => ['Debug']
-  pod 'SnapKit', '~> 3.0'
+  pod 'SnapKit', '~> 4.0'
   pod 'SwiftLint', '~> 0.16'
   pod 'Reusable', '~> 4.0'
 end
